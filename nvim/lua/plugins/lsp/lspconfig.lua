@@ -93,21 +93,21 @@ return {
 					capabilities = capabilities,
 				})
 			end,
-			["pyright"] = function()
-				lspconfig["pyright"].setup({
-					capabilities = capabilities,
-					settings = {
-						python = {
-							analysis = {
-								autoSearchPaths = true,
-								useLibraryCodeForTypes = true,
-								diagnosticMode = "workspace", -- Ensures it looks at the whole workspace
-								venvPath = "~/Documents/", -- Path to your venv directory
-							},
-						},
-					},
-				})
-			end,
+			-- ["pyright"] = function()
+			-- 	lspconfig["pyright"].setup({
+			-- 		capabilities = capabilities,
+			-- 		settings = {
+			-- 			python = {
+			-- 				analysis = {
+			-- 					autoSearchPaths = true,
+			-- 					useLibraryCodeForTypes = true,
+			-- 					diagnosticMode = "workspace", -- Ensures it looks at the whole workspace
+			-- 					venvPath = "~/Documents/", -- Path to your venv directory
+			-- 				},
+			-- 			},
+			-- 		},
+			-- 	})
+			-- end,
 			["svelte"] = function()
 				-- configure svelte server
 				lspconfig["svelte"].setup({
